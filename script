@@ -1,0 +1,3 @@
+apt update
+iptables -t nat -A POSTROUTING -s 10.4.0.1/2 -o eth0 -j MASQUERADE
+openvpn --config /etc/openvpn/server/openvpn.conf
